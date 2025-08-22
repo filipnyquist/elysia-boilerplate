@@ -12,6 +12,7 @@
     "db:migrate": "bun run src/migrate.ts",
     "db:studio": "drizzle-kit studio",
     "db:push": "drizzle-kit push",
+    "test:api": "bun run test-api.ts",
     "lint": "echo 'Add linting later if needed'",
     "test": "bun test"
   },
@@ -33,11 +34,13 @@
     "@elysiajs/swagger": "latest",
     "drizzle-orm": "latest",
     "postgres": "^3.4.3",
+    "pg": "^8.11.3",
     "better-sqlite3": "latest"
   },
   "devDependencies": {
     "drizzle-kit": "latest",
     "@types/better-sqlite3": "latest",
+    "@types/pg": "^8.10.9",
     "bun-types": "latest"
   }
 }

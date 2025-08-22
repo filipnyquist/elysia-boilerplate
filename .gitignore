@@ -19,6 +19,9 @@ build/
 *.sqlite
 *.sqlite3
 
+# Docker
+.dockerignore
+
 # Logs
 logs
 *.log
