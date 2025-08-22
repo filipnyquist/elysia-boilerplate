@@ -1,0 +1,46 @@
+{
+  "name": "elysia-boilerplate",
+  "version": "1.0.0",
+  "description": "A Bun.JS Elysia and Drizzle ORM boilerplate with PostgreSQL and SQLite support",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir ./dist --target bun",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "bun run src/migrate.ts",
+    "db:studio": "drizzle-kit studio",
+    "db:push": "drizzle-kit push",
+    "test:api": "bun run test-api.ts",
+    "lint": "echo 'Add linting later if needed'",
+    "test": "bun test"
+  },
+  "keywords": [
+    "elysia",
+    "drizzle",
+    "bun",
+    "postgresql",
+    "sqlite",
+    "api",
+    "boilerplate",
+    "typescript"
+  ],
+  "author": "Filip Nyquist",
+  "license": "MIT",
+  "dependencies": {
+    "elysia": "latest",
+    "@elysiajs/cors": "latest",
+    "@elysiajs/swagger": "latest",
+    "drizzle-orm": "latest",
+    "postgres": "^3.4.3",
+    "pg": "^8.11.3",
+    "better-sqlite3": "latest"
+  },
+  "devDependencies": {
+    "drizzle-kit": "latest",
+    "@types/better-sqlite3": "latest",
+    "@types/pg": "^8.10.9",
+    "bun-types": "latest"
+  }
+}
